@@ -1,16 +1,16 @@
 
 # dom
 
-Interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the Document Object Model (DOM).
+Interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the [Document Object Model](https://www.w3.org/DOM/#what) (DOM).
 
 ## Installation
 
-```sh
+```
 npm install @kabeleced/webext-dom
 ```
 
 ## Usage
-
+Several interfaces and implementations are or wil
 ### ElementsByXPath
 
 Access to the an element of a DOM by a specific XPath.
@@ -64,5 +64,5 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxMjQ4NzVdfQ==
+eyJoaXN0b3J5IjpbLTE1ODAzNzI3NTNdfQ==
 -->
