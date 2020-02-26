@@ -1,7 +1,7 @@
 
 # dom
 
-Interfaces for TypeScript and implementations for TypeScript and JavaScript helping to interact with the Document Object Model (DOM).
+Interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the Document Object Model (DOM).
 
 ## Installation
 
@@ -64,5 +64,5 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Mzg4NDM2Nl19
+eyJoaXN0b3J5IjpbOTUxMjQ4NzVdfQ==
 -->
