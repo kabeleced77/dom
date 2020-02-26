@@ -4,11 +4,14 @@
 Interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the [Document Object Model](https://www.w3.org/DOM/#what) (DOM).
 
 ## Installation
-Install package dependency
+Install this package dependency to your project
 ```
 npm install @kabeleced/webext-dom
 ```
-or 
+or as dev-dependency
+```
+npm install --save-dev @kabeleced/webext-dom
+```
 
 ## Usage
 Several interfaces and implementations are or will be provided by this package.
@@ -72,5 +75,5 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk2MzYyMTg3XX0=
+eyJoaXN0b3J5IjpbLTE1NjM0MTM0OTldfQ==
 -->
