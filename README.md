@@ -15,7 +15,7 @@ Several interfaces and implementations are or will be provided by this package.
 Its main goal is to provide interfaces which can be used by a TypeScript application like
 
 ```
-
+import { ElementByXPath } from '../dist/ElementByXPath'
 ```
 
 ### ElementsByXPath
@@ -71,5 +71,5 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxMDQwMDA5XX0=
+eyJoaXN0b3J5IjpbLTczMzg2MTQyNl19
 -->
