@@ -3,7 +3,9 @@
 
 This package offers interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the [Document Object Model](https://www.w3.org/DOM/#what) (DOM).
 
-Its main goal is to provide interfaces which can be used by a TypeScript application like
+Its main goal is to provide interfaces and implementations used by a TypeScript application like
+```
+```
 
 ## Installation
 Add this package as a dependency to your project
@@ -77,6 +79,6 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjM5MDI4MzgsMjIzNTYyNzczLC0xNT
-YzNDEzNDk5XX0=
+eyJoaXN0b3J5IjpbMTMzMDM4MDY0MCwyMjM1NjI3NzMsLTE1Nj
+M0MTM0OTldfQ==
 -->
