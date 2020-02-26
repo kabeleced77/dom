@@ -1,7 +1,7 @@
 
 # dom
 
-Interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the [Document Object Model](https://www.w3.org/DOM/#what) (DOM).
+This package offers interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the [Document Object Model](https://www.w3.org/DOM/#what) (DOM).
 
 ## Installation
 Add this package as a dependency to your project
@@ -75,5 +75,6 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzNTYyNzczLC0xNTYzNDEzNDk5XX0=
+eyJoaXN0b3J5IjpbODQ1NzM1OTA2LDIyMzU2Mjc3MywtMTU2Mz
+QxMzQ5OV19
 -->
