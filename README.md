@@ -10,7 +10,14 @@ npm install @kabeleced/webext-dom
 ```
 
 ## Usage
-Several interfaces and implementations are or wil
+Several interfaces and implementations are or will be provided by this package.
+
+Its main goal is to provide interfaces which can be used by a TypeScript application like
+
+```
+
+```
+
 ### ElementsByXPath
 
 Access to the an element of a DOM by a specific XPath.
@@ -64,5 +71,5 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODAzNzI3NTNdfQ==
+eyJoaXN0b3J5IjpbNjYxMDQwMDA5XX0=
 -->
