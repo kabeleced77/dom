@@ -18,13 +18,6 @@ npm install --save-dev @kabeleced/webext-dom
 ```
 
 ## Usage
-Several interfaces and implementations are or will be provided by this package.
-
-
-
-```
-import { ElementByXPath } from '../dist/ElementByXPath'
-```
 
 ### ElementsByXPath
 
@@ -79,6 +72,6 @@ Text with substitution: Hello World!
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDM4MDY0MCwyMjM1NjI3NzMsLTE1Nj
-M0MTM0OTldfQ==
+eyJoaXN0b3J5IjpbLTE5ODUyNDgzMTEsMjIzNTYyNzczLC0xNT
+YzNDEzNDk5XX0=
 -->
