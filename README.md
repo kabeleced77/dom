@@ -57,7 +57,7 @@ This section provides small examples using the interface implementations.
 Provides a wrapper of the function `document.evaluate()` accessing a DOM element by a specific XPath.
 
 Assume you have following simple `DOM`:
-```
+```HTML
 <p id = "test-id" /p>
 ```
 
@@ -65,13 +65,14 @@ Assume you have following simple `DOM`:
 
 ```javascript
 const ElementByXpath = require('@kabeleced/dom').ElementByXPath;
+
 const elementByXpath = new ElementByXpath('//*[@id="test-id"]');
+
 console.log('XPath: ' + elementByXpath.xPath());
 console.log('Tag name of element: ' + elementByXpath.element(window.document)[0].tagName);
 ```
-The output should be
-
 ```
+// output (tag names are always returned upper-cased)
 XPath: //*[@id="test-id"]
 Tag name of Element: P
 ```
@@ -102,6 +103,6 @@ Tag name of element by XPath '//*[@id="test-id"]': 'P'.
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5Nzg5NzQxMSwyMjM1NjI3NzMsLTE1Nj
-M0MTM0OTldfQ==
+eyJoaXN0b3J5IjpbNzQ4NjA5NzE3LDIyMzU2Mjc3MywtMTU2Mz
+QxMzQ5OV19
 -->
