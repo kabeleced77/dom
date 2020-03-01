@@ -1,0 +1,50 @@
+{
+  "name": "dom",
+  "version": "1.0.0",
+  "description": "Provide object oriented wrappers for DOM related functions for selection and manipulation.",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "lint": "tsc --noEmit && eslint src/**/*.ts --fix",
+    "build": "rm -rf ./dist && tsc",
+    "test": "mocha -r ts-node/register -r jsdom-global/register test/**/*",
+    "all": "npm run lint && npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabeleced77/dom.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "DOM",
+    "XPath"
+  ],
+  "author": "Kabeleced",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kabeleced77/dom/issues"
+  },
+  "homepage": "https://github.com/kabeleced77/dom#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.9",
+    "@types/jsdom": "^16.1.0",
+    "@types/mocha": "^7.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jsdom": "^16.1.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^6.2.0",
+    "prettier": "^1.19.1",
+    "sinon-chrome": "^3.0.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
