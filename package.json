@@ -1,5 +1,5 @@
 {
-  "name": "dom",
+  "name": "@kabeleced/dom",
   "version": "1.0.0",
   "description": "Provide object oriented wrappers for DOM related functions for selection and manipulation.",
   "main": "dist/index.js",
