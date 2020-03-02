@@ -54,49 +54,6 @@ Interface subtyping `IElement` describing a type which provides access to a DOM 
 ## Usages
 This section provides small examples using the interface implementations.
 
-### `ElementByXPath`
-Provides a wrapper of the function `document.evaluate()` accessing a DOM element by a specific XPath.
-
-Assume you have following simple `DOM`:
-```HTML
-<p id = "test-id" /p>
-```
-
-#### Javascript
-
-```javascript
-const ElementByXpath = require('@kabeleced/dom').ElementByXPath;
-
-const elementByXpath = new ElementByXpath('//*[@id="test-id"]');
-
-console.log('XPath: ' + elementByXpath.xPath());
-console.log('Tag name of element: ' + elementByXpath.element(window.document)[0].tagName);
-```
-```
-// output (tag names are always returned upper-cased)
-XPath: //*[@id="test-id"]
-Tag name of Element: P
-```
-
-#### TypeScript
-
-With TypeScript the usage of the interface `IElementByXPath` is possible:
-```typescript
-import { IElementByXPath, ElementByXPath } from '@kabeleced/dom'
-
-function printTagName(elementByXPath: IElementByXPath, dom: Document): void {
-  const element = elementByXPath.element(dom);
-  if(element.length > 0) {
-    console.log(`Tag name of element by XPath '${elementByXPath.xPath()}': '${element[0].tagName}'.`);
-  }
-}
-
-printTagName(new ElementByXPath('//*[@id="test-id"]'), window.document);
-```
-```
-// output (tag names are always returned upper-cased)
-Tag name of element by XPath '//*[@id="test-id"]': 'P'.
-```
 ### `ElementById`
 Provides a wrapper of the function `document.getElementById()` accessing a DOM element by a specific id.
 
@@ -140,13 +97,55 @@ printTagName(new ElementById('test-id'), window.document);
 // output (tag names are always returned upper-cased)
 Tag name of element by Id 'test-id': 'P'.
 ```
+### `ElementByXPath`
+Provides a wrapper of the function `document.evaluate()` accessing a DOM element by a specific XPath.
 
+Assume you have following simple `DOM`:
+```HTML
+<p id = "test-id" /p>
+```
+
+#### Javascript
+
+```javascript
+const ElementByXpath = require('@kabeleced/dom').ElementByXPath;
+
+const elementByXpath = new ElementByXpath('//*[@id="test-id"]');
+
+console.log('XPath: ' + elementByXpath.xPath());
+console.log('Tag name of element: ' + elementByXpath.element(window.document)[0].tagName);
+```
+```
+// output (tag names are always returned upper-cased)
+XPath: //*[@id="test-id"]
+Tag name of Element: P
+```
+
+#### TypeScript
+
+With TypeScript the usage of the interface `IElementByXPath` is possible:
+```typescript
+import { IElementByXPath, ElementByXPath } from '@kabeleced/dom'
+
+function printTagName(elementByXPath: IElementByXPath, dom: Document): void {
+  const element = elementByXPath.element(dom);
+  if(element.length > 0) {
+    console.log(`Tag name of element by XPath '${elementByXPath.xPath()}': '${element[0].tagName}'.`);
+  }
+}
+
+printTagName(new ElementByXPath('//*[@id="test-id"]'), window.document);
+```
+```
+// output (tag names are always returned upper-cased)
+Tag name of element by XPath '//*[@id="test-id"]': 'P'.
+```
 ## Test
 
 ```sh
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzA3NTg4NzIsMjIzNTYyNzczLC0xNT
+eyJoaXN0b3J5IjpbLTEyNjY0MjUzMDAsMjIzNTYyNzczLC0xNT
 YzNDEzNDk5XX0=
 -->
