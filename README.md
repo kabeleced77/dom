@@ -97,6 +97,49 @@ printTagName(new ElementByXPath('//*[@id="test-id"]'), window.document);
 // output (tag names are always returned upper-cased)
 Tag name of element by XPath '//*[@id="test-id"]': 'P'.
 ```
+### `ElementById`
+Provides a wrapper of the function `document.getElementById()` accessing a DOM element by a specific id.
+
+Assume you have following simple `DOM`:
+```HTML
+<p id = "test-id" /p>
+```
+
+#### Javascript
+
+```javascript
+const ElementById = require('@kabeleced/dom').ElementById;
+
+const elementById = new ElementById('test-id');
+
+console.log('Id: ' + elementById.id());
+console.log('Tag name of element: ' + elementById.element(window.document)[0].tagName);
+```
+```
+// output (tag names are always returned upper-cased)
+Id: test-id
+Tag name of Element: P
+```
+
+#### TypeScript
+
+With TypeScript the usage of the interface `IElementById` is possible:
+```typescript
+import { IElementById, ElementById } from '@kabeleced/dom'
+
+function printTagName(elementById: IElementById, dom: Document): void {
+  const element = elementById.element(dom);
+  if(element.length > 0) {
+    console.log(`Tag name of element by Id '${elementById.id()}': '${element[0].tagName}'.`);
+  }
+}
+
+printTagName(new ElementById('test-id'), window.document);
+```
+```
+// output (tag names are always returned upper-cased)
+Tag name of element by Id 'test-id': 'P'.
+```
 
 ## Test
 
@@ -104,6 +147,6 @@ Tag name of element by XPath '//*[@id="test-id"]': 'P'.
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDQ5NTA4MiwyMjM1NjI3NzMsLTE1Nj
-M0MTM0OTldfQ==
+eyJoaXN0b3J5IjpbLTEyMzA3NTg4NzIsMjIzNTYyNzczLC0xNT
+YzNDEzNDk5XX0=
 -->
