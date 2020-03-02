@@ -104,6 +104,6 @@ Tag name of element by XPath '//*[@id="test-id"]': 'P'.
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4NjA5NzE3LDIyMzU2Mjc3MywtMTU2Mz
-QxMzQ5OV19
+eyJoaXN0b3J5IjpbLTc1NDQ5NTA4MiwyMjM1NjI3NzMsLTE1Nj
+M0MTM0OTldfQ==
 -->
