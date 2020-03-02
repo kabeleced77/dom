@@ -1,7 +1,7 @@
 const expect = require('chai').expect
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
-const ElementById = require('../dist/ElementById').ElementById
+const ElementById = require('../dist/index.js').ElementById
 
 describe('ElementById function test', () => {
   let dom

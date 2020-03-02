@@ -1,7 +1,7 @@
 const expect = require('chai').expect
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
-const ElementsByXpath = require('../dist/ElementByXPath').ElementByXPath
+const ElementsByXpath = require('../dist/index.js').ElementByXPath
 
 describe('ElementsByXPath function test', () => {
   it('should return given XPath', () => {
