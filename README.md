@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/kabeleced77/dom.svg?branch=master)](https://travis-ci.org/kabeleced77/dom)
 
-# dom
+# @kabeleced/dom
 
 This package offers interfaces for [TypeScript](https://www.typescriptlang.org/) and implementations for TypeScript and JavaScript helping to interact with the [Document Object Model](https://www.w3.org/DOM/#what) (DOM).
 
@@ -146,6 +146,6 @@ Tag name of element by XPath '//*[@id="test-id"]': 'P'.
 npm run test
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjY0MjUzMDAsMjIzNTYyNzczLC0xNT
-YzNDEzNDk5XX0=
+eyJoaXN0b3J5IjpbLTcwNjYyMjM1OSwyMjM1NjI3NzMsLTE1Nj
+M0MTM0OTldfQ==
 -->
