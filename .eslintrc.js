@@ -2,8 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    jest: true,
     mocha: true,
+    amd: true,
   },
   extends: [
     'eslint:recommended',
@@ -29,7 +29,7 @@ module.exports = {
     {
       files: ['*.js', '*.jsx'],
       rules: {
-        "@typescript-eslint/no-var-requires": "off",
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],
