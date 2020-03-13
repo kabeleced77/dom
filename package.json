@@ -11,7 +11,10 @@
     "lint": "tsc --noEmit && eslint src/**/*.ts --fix",
     "build": "npm run lint && rm -rf ./dist && tsc",
     "test": "npm run build && mocha -r ts-node/register -r jsdom-global/register test/**/*",
-    "all": "npm run test"
+    "all": "npm run test",
+    "preversion": "npm run all",
+    "version": "",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
