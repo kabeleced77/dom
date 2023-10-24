@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kabeleced77/dom.svg?branch=master)](https://travis-ci.org/kabeleced77/dom)
+![Build Status](https://app.travis-ci.com/kabeleced77/dom.svg?branch=master)
 
 # @kabeleced/dom
 
